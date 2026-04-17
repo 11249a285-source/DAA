@@ -1,26 +1,30 @@
 Aim: To sort a list of elements using the Randomized Quick Sort algorithm.
 
-Algorithm: Randomized Quick Sort
+Algorithm: RandomizedQuickSort(A, low, high)
 
 Start
-If low < high then:
- a. Select a random pivot using random_partition()
- b. Partition the array into two parts
-  - Elements ≤ pivot on left
-  - Elements > pivot on right
- c. Recursively apply quicksort on left subarray
- d. Recursively apply quicksort on right subarray
+If low < high then
+ a. pi ← RandomPartition(A, low, high)
+ b. RandomizedQuickSort(A, low, pi - 1)
+ c. RandomizedQuickSort(A, pi + 1, high)
 Stop
 
-Sub Algorithm: Partition
+Algorithm: RandomPartition(A, low, high)
 
-Choose last element as pivot
-Initialize i = low - 1
-For j = low to high-1:
- If a[j] ≤ pivot:
-  Increment i and swap a[i] and a[j]
-Swap pivot with a[i+1]
-Return pivot index
+Generate a random index r such that low ≤ r ≤ high
+Swap A[r] and A[high]
+Return Partition(A, low, high)
+
+Algorithm: Partition(A, low, high)
+
+pivot ← A[high]
+i ← low - 1
+For j ← low to high - 1 do
+  If A[j] ≤ pivot then
+   a. i ← i + 1
+   b. Swap A[i] and A[j]
+Swap A[i + 1] and A[high]
+Return i + 1
 
 Program:
 
