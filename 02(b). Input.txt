@@ -1,0 +1,4 @@
+Sample Input:
+
+Enter n: 6
+
