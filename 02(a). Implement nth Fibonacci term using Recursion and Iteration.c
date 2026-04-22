@@ -49,12 +49,3 @@ int main() {
     return 0; 
 }
 
-Sample Input:
-Enter n: 6
-
-Sample Output:
-
-Recursive Fibonacci: 8
-Iterative Fibonacci: 8
-
-Result: Thus, the program to find the nth Fibonacci number using recursion and iteration is executed successfully, and the output is verified.
