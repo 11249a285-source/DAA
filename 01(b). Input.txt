@@ -1,0 +1,4 @@
+Sample Input:
+
+Enter number of disks: 3
+
