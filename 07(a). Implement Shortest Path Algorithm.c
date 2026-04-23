@@ -71,24 +71,3 @@ int main() {
     return 0;
 }
 
-Sample Input:
-
-Enter number of vertices: 4
-
-Enter adjacency matrix:
-0 2 5 1
-3 0 7 4
-3 8 0 2
-4 2 1 0
-
-Enter source vertex: 0
-
-Sample Output:
-
-Shortest distances:
-0 -> 0 = 0
-0 -> 1 = 2
-0 -> 2 = 2
-0 -> 3 = 1
-
-Result: Thus, the shortest path from the source vertex to all other vertices was successfully found using Dijkstra’s Algorithm.
