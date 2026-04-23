@@ -1,13 +1,7 @@
 
-Sample Input: 
-
-Enter number of items: 3
-Enter weight and profit of item 1: 10 60
-Enter weight and profit of item 2: 20 100
-Enter weight and profit of item 3: 30 120
-Enter knapsack capacity: 50
 
 Sample Output: 
 
 Maximum profit = 240.00
 
+Result: Thus, the program to solve the Fractional Knapsack Problem using Greedy Method is executed successfully and the maximum profit is obtained.
