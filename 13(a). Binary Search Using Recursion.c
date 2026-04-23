@@ -3,18 +3,19 @@ Aim: To search for a given element in an array using Binary Search (Recursion) a
 Algorithm: BINARY_SEARCH(arr, low, high, key)
 
 Start
-If low > high then
-  Print "Element not found" and return
+Step 1: If low > high
+  Print "Element not found" and return.
 
-mid ← (low + high) / 2
+Step 2: Find middle position
+  mid ← (low + high) / 2
 
-If arr[mid] == key then
-  Print "Element found at position mid+1" and return
+Step 3: If arr[mid] = key
+  Print "Element found at position mid+1" and return.
 
-Else if key < arr[mid] then
+Step 4: If key < arr[mid]
   Call BINARY_SEARCH(arr, low, mid-1, key)
 
-Else
+Step 5: Else
   Call BINARY_SEARCH(arr, mid+1, high, key)
 
 Stop
@@ -35,8 +36,10 @@ void bs(int a[], int low, int high, int key)
 
         if (a[mid] == key)
             printf("Element found at position %d\n", mid + 1);
+
         else if (key < a[mid])
             bs(a, low, mid - 1, key);
+
         else
             bs(a, mid + 1, high, key);
     }
@@ -44,34 +47,32 @@ void bs(int a[], int low, int high, int key)
 
 int main()
 {
-    int a[10000], n = 10000, key, i;
+    int a[100], n, key, i;
     clock_t start, end;
 
-    // Generate sorted elements (important for Binary Search)
-    for (i = 0; i < n; i++)
-        a[i] = i;  
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
 
-    key = rand() % 10000;
+    printf("Enter %d elements (in sorted order for binary search):\n", n);
 
-    printf("Searching for element: %d\n", key);
+    for(i=0; i<n; i++)
+    {
+        printf("Element[%d]: ", i+1);
+        scanf("%d", &a[i]);
+    }
+
+    printf("Enter the element to search: ");
+    scanf("%d",&key);
 
     start = clock();
 
-    bs(a, 0, n - 1, key);
+    bs(a,0,n-1,key);
 
     end = clock();
 
-    double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+    double time_taken=((double)(end-start))/CLOCKS_PER_SEC;
 
-    printf("Total time taken: %lf seconds\n", time_taken);
+    printf("Total time taken: %lf seconds\n",time_taken);
 
     return 0;
 }
-
-Sample Output:
-
-Searching for element: 457
-Element found at position 458
-Total time taken: 0.000001 seconds
-
-Result: Thus, the element is searched successfully using Binary Search (Recursion), and execution time is calculated.
