@@ -1,15 +1,8 @@
-Sample Input:
-
-Enter number of vertices: 4
-
-Enter adjacency matrix:
-0 1 1 0
-1 0 1 1
-1 1 0 1
-0 1 1 0
-
 Sample Output:
 
 Vertex Cover:
 0 1
 2 3
+
+Result: Thus, the vertex cover of the given graph is obtained using a greedy approximation algorithm.
+
