@@ -3,6 +3,7 @@ Aim: To search for a given element in an array using Binary Search (Recursion) a
 Algorithm: BINARY_SEARCH(arr, low, high, key)
 
 Start
+
 Step 1: If low > high
   Print "Element not found" and return.
 
