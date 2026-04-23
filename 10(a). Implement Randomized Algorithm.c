@@ -89,16 +89,5 @@ int main() {
     return 0;
 }
 
-Sample Input:
 
-Enter number of elements: 5
-Enter elements:
-4 2 7 1 3
-
-Sample Output:
-
-Sorted array:
-1 2 3 4 7
-
-Result: Thus, the given list of elements is sorted successfully using the Randomized Quick Sort algorithm.
 
