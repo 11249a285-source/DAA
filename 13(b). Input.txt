@@ -1,0 +1,12 @@
+Sample Input:
+
+Enter the number of elements: 5
+
+Enter 5 elements (in sorted order for binary search):
+Element[1]: 10
+Element[2]: 20
+Element[3]: 30
+Element[4]: 40
+Element[5]: 50
+
+Enter the element to search: 30
