@@ -1,12 +1,8 @@
-Sample Input:
-
-Enter number of cities: 4
-Enter cost matrix:
-0 10 15 20
-10 0 35 25
-15 35 0 30
-20 25 30 0
-
 Sample Output:
 
 Minimum tour cost: 80
+
+Result: Thus, the program to solve the Travelling Salesman Problem using Branch and Bound (recursion) is executed successfully and the minimum tour cost is obtained.
+
+
+
