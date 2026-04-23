@@ -1,0 +1,12 @@
+Sample Input:
+
+Enter the number of elements: 5
+
+Enter 5 elements:
+Element[1]: 12
+Element[2]: 25
+Element[3]: 36
+Element[4]: 48
+Element[5]: 59
+
+Enter the element to search: 36
