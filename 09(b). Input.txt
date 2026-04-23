@@ -1,0 +1,10 @@
+Sample Input:
+
+Enter number of vertices: 4
+
+Enter adjacency matrix:
+0 1 1 0
+1 0 1 1
+1 1 0 1
+0 1 1 0
+
